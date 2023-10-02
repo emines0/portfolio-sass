@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-sass",
+  "version": "1.0.0",
+  "description": "portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss/main.scss:dist/css/style.css --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emines0/portfolio-sass.git"
+  },
+  "keywords": [
+    "sass",
+    "css",
+    "js",
+    "html"
+  ],
+  "author": "emines0",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emines0/portfolio-sass/issues"
+  },
+  "homepage": "https://github.com/emines0/portfolio-sass#readme",
+  "dependencies": {
+    "sass": "^1.68.0"
+  }
+}

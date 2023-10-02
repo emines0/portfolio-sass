@@ -1,0 +1,101 @@
+/* Imports */
+@import 'config';
+@import 'utilities';
+
+/* General Styles*/
+*,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-family;
+  line-height: 1.6;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: $dark-clr;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+/* Logo */
+#logo {
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* Main Nav */
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 1rem 1.5rem;
+  }
+
+  a {
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid; // due to changing color on hover to not push the text upper
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+
+    &:hover {
+      border-color: $medium-clr;
+    }
+
+    &.current {
+      border-color: $main-clr;
+    }
+  }
+}
+
+/* Header */
+#header {
+  /* Header Home */
+  &-home {
+    background: $bg-image no-repeat center right / cover;
+    height: 100vh;
+    color: #fff;
+
+    /* Header Content */
+    .header-content {
+      text-align: center;
+      padding-top: 20%;
+
+      h1 {
+        font-size: 4rem;
+        line-height: 1.2;
+      }
+    }
+  }
+  /* Header Inner */
+  &-inner {
+  }
+}
