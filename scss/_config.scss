@@ -14,3 +14,12 @@ $bg-image: url('../img/showcase.jpg');
 
 // Sizes
 $website-width: 1280px;
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}

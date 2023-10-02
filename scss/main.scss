@@ -146,4 +146,77 @@ img {
       }
     }
   }
+  // Home Section C
+  &-c {
+    .process {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1.5rem;
+      text-align: center;
+
+      // process-step
+      &-step {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        font-size: 14px;
+        background: $main-clr;
+        color: set-text-color($main-clr);
+        border-radius: 50%;
+
+        padding: 0.8rem;
+        transition: all 1s;
+        text-align: center;
+      }
+
+      // process-icon
+      &-icon {
+        border-radius: 50%;
+        background: $dark-clr;
+        color: set-text-color($dark-clr);
+        font-size: 28px;
+        padding: 1.8rem;
+        text-align: center;
+        position: relative;
+        transition: all 1s;
+
+        &:hover {
+          background: $main-clr;
+          width: 75px;
+          height: 75px;
+
+          .process-step {
+            background: $dark-clr;
+            color: set-text-color($dark-clr);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Footer
+#main-footer {
+  background: $dark-clr;
+  color: #fff;
+  height: 5rem;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+
+    .social .fab {
+      margin-right: 1rem;
+      border: 2px #fff solid;
+      border-radius: 50%;
+      text-align: center;
+      padding: 0.5rem;
+
+      &:hover {
+        background: $main-clr;
+      }
+    }
+  }
 }
