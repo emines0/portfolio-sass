@@ -39,6 +39,30 @@ input[class^='btn-']:hover {
   background-color: $main-clr;
 }
 
+// Backgrounds
+
+.bg {
+  &-main {
+    background: $main-clr;
+    color: set-text-color($main-clr);
+  }
+
+  &-dark {
+    background: $dark-clr;
+    color: set-text-color($dark-clr);
+  }
+
+  &-light {
+    background: $light-clr;
+    color: set-text-color($light-clr);
+  }
+
+  &-medium {
+    background: $medium-clr;
+    color: set-text-color($medium-clr);
+  }
+}
+
 .lead {
   font-size: 1.3rem;
   margin-bottom: 2rem;
@@ -96,9 +120,3 @@ input[class^='btn-']:hover {
     margin: 4rem 0;
   }
 }
-
-// Clearfix
-// .clr {
-//   content: '';
-//   clear: both;
-// }

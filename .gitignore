@@ -359,6 +359,7 @@ sftp-config.json
 nbproject/private/
 build/
 nbbuild/
+#dist/
 nbdist/
 nbactions.xml
 .nb-gradle/
